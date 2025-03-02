@@ -1,17 +1,21 @@
-// import Card from './components/card'
 import './App.css'
-import Counter from './components/counter'
+import ToggleButton from './components/ToggleButton'
+// import Counter from './components/counter'
+// import Card from './components/card'
 
 function App() {
  
-  const items = ['React', 'Vue', 'Angular', 'Svelte']
+  // const items = ['React', 'Vue', 'Angular', 'Svelte']
 
   return (
     <>
       <section>
-        <h1>Manejo de estado</h1>
+      <h1>Toggle button (Renderizado)</h1>
+      <ToggleButton/>
 
-        <Counter></Counter>
+        {/* <h1>Manejo de estado</h1>
+
+        <Counter></Counter> */}
         {/* <Card
           title="Curso de React"
           description="Aprende React desde cero"
