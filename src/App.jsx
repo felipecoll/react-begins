@@ -1,5 +1,6 @@
 import './App.css'
-import CounterWithEffect from './components/CounterWithEffect'
+import Card from './components/Card/Card'
+//import CounterWithEffect from './components/CounterWithEffect'
 //import NameForm from './components/nameForm'
 //import ToggleButton from './components/ToggleButton'
 // import Counter from './components/counter'
@@ -12,7 +13,8 @@ function App() {
   return (
     <>
       <section>
-        <CounterWithEffect />
+        <Card />
+        {/* <CounterWithEffect /> */}
         {/* <h2>Form </h2>
         <NameForm/> */}
       {/* <h1>Toggle button (Renderizado)</h1>
