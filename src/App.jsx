@@ -1,5 +1,6 @@
 import './App.css'
-import Card from './components/Card/Card'
+import Button from './components/Button/Button'
+// import Card from './components/Card/Card'
 //import CounterWithEffect from './components/CounterWithEffect'
 //import NameForm from './components/nameForm'
 //import ToggleButton from './components/ToggleButton'
@@ -13,7 +14,9 @@ function App() {
   return (
     <>
       <section>
-        <Card />
+        <Button>Hola</Button>
+        <Button>Adios</Button>
+        {/* <Card /> */}
         {/* <CounterWithEffect /> */}
         {/* <h2>Form </h2>
         <NameForm/> */}
