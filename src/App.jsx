@@ -1,5 +1,6 @@
 import './App.css'
-import ToggleButton from './components/ToggleButton'
+import NameForm from './components/nameForm'
+//import ToggleButton from './components/ToggleButton'
 // import Counter from './components/counter'
 // import Card from './components/card'
 
@@ -10,8 +11,10 @@ function App() {
   return (
     <>
       <section>
-      <h1>Toggle button (Renderizado)</h1>
-      <ToggleButton/>
+        <h2>Form </h2>
+        <NameForm/>
+      {/* <h1>Toggle button (Renderizado)</h1>
+      <ToggleButton/> */}
 
         {/* <h1>Manejo de estado</h1>
 
