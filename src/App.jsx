@@ -1,5 +1,6 @@
-import Card from './components/card'
+// import Card from './components/card'
 import './App.css'
+import Counter from './components/counter'
 
 function App() {
  
@@ -8,9 +9,10 @@ function App() {
   return (
     <>
       <section>
-        <h1>Hola mundo!!!</h1>
+        <h1>Manejo de estado</h1>
 
-        <Card
+        <Counter></Counter>
+        {/* <Card
           title="Curso de React"
           description="Aprende React desde cero"
           price="$50">
@@ -26,7 +28,7 @@ function App() {
           {items.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
-        </ul>
+        </ul> */}
       </section>
     </>
   )
