@@ -1,5 +1,9 @@
 import './App.css'
-import Button from './components/Button/Button'
+import SearchPost from './components/SearchPost/SearchPost.jsx'
+//import StaticComponent from './components/StaticComponents/StaticComponent.jsx'
+// import UserList from './components/UserList/UserList.jsx'
+//import UserListWithLoading from './components/UserListWithLoading/UserListWithLoading.jsx'
+//import Button from './components/Button/Button'
 // import Card from './components/Card/Card'
 //import CounterWithEffect from './components/CounterWithEffect'
 //import NameForm from './components/nameForm'
@@ -14,8 +18,12 @@ function App() {
   return (
     <>
       <section>
-        <Button>Hola</Button>
-        <Button>Adios</Button>
+        <SearchPost />
+        {/* <StaticComponent />
+        <UserListWithLoading /> */}
+        {/* <UserList /> */}
+        {/* <Button>Hola</Button>
+        <Button>Adios</Button> */}
         {/* <Card /> */}
         {/* <CounterWithEffect /> */}
         {/* <h2>Form </h2>
