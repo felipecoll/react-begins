@@ -1,4 +1,5 @@
 import './App.css'
+import { createContext, useState, useContext } from 'react'
 import Counter from './components/Counter/Counter.jsx'
 //import SearchPost from './components/SearchPost/SearchPost.jsx'
 //import StaticComponent from './components/StaticComponents/StaticComponent.jsx'
@@ -12,12 +13,42 @@ import Counter from './components/Counter/Counter.jsx'
 // import Counter from './components/counter'
 // import Card from './components/card'
 
+const ThemeContext = createContext()
+
+function ThemeProvider({children}) {
+  const [theme, setTheme] = useState('light')
+
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light')
+  }
+
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  )
+}
+
+function ThemeButton() {
+  const { theme, toggleTheme } = useContext(ThemeContext)
+
+  return (
+    <button onClick={toggleTheme}>
+      {theme === 'light' ? 'Dark' : 'Light'}
+    </button>
+  )
+}
+  
+
+
 function App() {
  
   // const items = ['React', 'Vue', 'Angular', 'Svelte']
 
   return (
-    <>
+      <ThemeProvider>
+        <ThemeButton />
+      
       <section>
         <Counter/>
         {/* <SearchPost /> */}
@@ -54,7 +85,7 @@ function App() {
           ))}
         </ul> */}
       </section>
-    </>
+      </ThemeProvider>
   )
 }
 
