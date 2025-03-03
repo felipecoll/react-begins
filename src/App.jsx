@@ -1,5 +1,6 @@
 import './App.css'
-import SearchPost from './components/SearchPost/SearchPost.jsx'
+import Counter from './components/Counter/Counter.jsx'
+//import SearchPost from './components/SearchPost/SearchPost.jsx'
 //import StaticComponent from './components/StaticComponents/StaticComponent.jsx'
 // import UserList from './components/UserList/UserList.jsx'
 //import UserListWithLoading from './components/UserListWithLoading/UserListWithLoading.jsx'
@@ -18,7 +19,8 @@ function App() {
   return (
     <>
       <section>
-        <SearchPost />
+        <Counter/>
+        {/* <SearchPost /> */}
         {/* <StaticComponent />
         <UserListWithLoading /> */}
         {/* <UserList /> */}
