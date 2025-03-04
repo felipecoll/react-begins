@@ -1,6 +1,7 @@
 import './App.css'
 import { createContext, useState, useContext } from 'react'
-import Counter from './components/Counter/Counter.jsx'
+//import Counter from './components/Counter/Counter.jsx'
+import CounterWithCustomHook from './components/CounterWithCustomHook/CounterWithCustomHook.jsx'
 //import SearchPost from './components/SearchPost/SearchPost.jsx'
 //import StaticComponent from './components/StaticComponents/StaticComponent.jsx'
 // import UserList from './components/UserList/UserList.jsx'
@@ -47,10 +48,11 @@ function App() {
 
   return (
       <ThemeProvider>
-        <ThemeButton />
+        {/* <ThemeButton /> */}
       
       <section>
-        <Counter/>
+        <CounterWithCustomHook />
+        {/* <Counter/> */}
         {/* <SearchPost /> */}
         {/* <StaticComponent />
         <UserListWithLoading /> */}
