@@ -25,7 +25,7 @@ function CounterWithReactMemo() {
 
   return (
     <div>
-      
+      <h1>Contador personalizado mediante react memo</h1>
       <button onClick={increment}>Increment</button>
       <Child counter={counter}/>
       <ExpensiveCalculation num={counter}/>
