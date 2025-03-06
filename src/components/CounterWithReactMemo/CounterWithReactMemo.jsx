@@ -29,6 +29,7 @@ function CounterWithReactMemo() {
       <button onClick={increment}>Increment</button>
       <Child counter={counter}/>
       <ExpensiveCalculation num={counter}/>
+      <p>Fin de curso con este tema!</p>
     </div>
   );
 }
